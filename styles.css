@@ -106,14 +106,14 @@ footer {
 .logo {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #ffffff, var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--accent); /* Solid accent color */
     margin-bottom: 10px;
 }
 
-/* On the home page, the App Studio logo uses a neutral gradient */
-.logo-hub { background: linear-gradient(135deg, #ffffff, #9ca3af); }
+/* On the home page, the App Studio logo uses a neutral solid color */
+.logo-hub { 
+    color: #f3f4f6; 
+}
 
 .tagline { color: var(--text-muted); font-size: 1.2rem; }
 
