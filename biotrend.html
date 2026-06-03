@@ -26,10 +26,35 @@
             align-items: center;
         }
 
+        /* Back Navigation Bar */
+        .nav-bar {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px 20px 0 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover {
+            color: var(--text-main);
+        }
+
         header {
             width: 100%;
             max-width: 800px;
-            padding: 40px 20px;
+            padding: 20px 20px 40px;
             text-align: center;
             box-sizing: border-box;
         }
@@ -136,6 +161,10 @@
 </head>
 <body>
 
+    <nav class="nav-bar">
+        <a href="index.html" class="back-link">&larr; Back to App Studio</a>
+    </nav>
+
     <header>
         <div class="logo">BioTrend</div>
         <div class="tagline">Your health dashboards, beautifully parsed and tracked.</div>
@@ -170,16 +199,16 @@
 
             <h3>Jurisdiction & Compliance Disclaimers</h3>
             <p>This Application is intended for use <strong>only outside of the European Union (EU)</strong>. If you are located in the EU, you should not use this Application.</p>
-            
+
             <h4>HIPAA & Regulatory Status</h4>
             <p>BioTrend is a direct-to-consumer personal health-tracking tool. The Company is <strong>NOT</strong> a "Covered Entity" or "Business Associate" as defined under the Health Insurance Portability and Accountability Act (HIPAA). The Service should <strong>NOT</strong> be used by healthcare providers or clinics to maintain or transmit Protected Health Information (PHI).</p>
             <p><strong>We are not a healthcare provider</strong> and are not subject to HIPAA. <strong>We do not claim HIPAA compliance</strong>.</p>
 
             <h3>Collecting and Using Your Data</h3>
             <p>We prioritize the privacy of your medical data. We only share Your Personal Data in the limited situations detailed below.</p>
-            
+
             <h4>Types of Data Collected</h4>
-            
+
             <strong>1. Health and Medical Data</strong>
             <p>To provide its core functionality, BioTrend requires health-related information that you voluntarily provide. Because BioTrend prioritizes local on-device storage, the following data is stored entirely on your device (or your personal iCloud) and is not permanently stored on our servers:</p>
             <ul>
