@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTrend — Track Your Lab Results</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #E76F70;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff9b9c, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            background: linear-gradient(135deg, #ffffff, #d1d5db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 25px;
+            color: #ff9b9c;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            color: #f3f4f6;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        p, li {
+            color: var(--text-main);
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--card-border);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            box-sizing: border-box;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: opacity 0.2s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            margin-top: 15px;
+            display: block;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">BioTrend</div>
+        <div class="tagline">Your health dashboards, beautifully parsed and tracked.</div>
+    </header>
+
+    <main>
+        <section class="glass-card">
+            <h2>Welcome to BioTrend</h2>
+            <p>BioTrend is designed to help you securely parse, organize, and track your clinical laboratory report metrics over time. By turning complex diagnostic text into interactive trend charts, you can visualize your biomarker history seamlessly.</p>
+            
+            <h3>Key Capabilities:</h3>
+            <ul>
+                <li><strong>Secure On-Device Processing & Sync:</strong> Integrates with secure cloud databases and optional services like Apple Health to keep your biomarker timelines updated automatically.</li>
+                <li><strong>Clear Visualization:</strong> Beautifully arranged dashboard metrics categorized by biological disciplines (Hematology, Biochemistry, Immunology, etc.).</li>
+            </ul>
+        </section>
+
+        <section id="privacy" class="glass-card">
+            <h2>Privacy Policy</h2>
+            <p><strong>Last updated: May 21, 2026</strong></p>
+            <p>This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the BioTrend iOS application (the "Service") and tells You about Your privacy rights and how the law protects You.</p>
+            <p>We use Your Personal and Health Data strictly to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+            
+            <h3>Interpretation and Definitions</h3>
+            <ul>
+                <li><strong>Application:</strong> Refers to BioTrend, the software program provided by the Company.</li>
+                <li><strong>Company:</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Privacy Policy) refers to BioTrend.</li>
+                <li><strong>Health Data:</strong> Refers to medical information, biomarker results, lab reports, and vitals inputted manually, extracted from uploaded documents, or synced via Apple Health.</li>
+                <li><strong>Personal Data:</strong> Is any information that relates to an identified or identifiable individual.</li>
+                <li><strong>Service Provider:</strong> Means any third-party companies or individuals employed by the Company to facilitate the Service (such as secure cloud hosting or data parsing APIs).</li>
+            </ul>
+
+            <h3>Jurisdiction & Compliance Disclaimers</h3>
+            <p>This Application is intended for use <strong>only outside of the European Union (EU)</strong>. If you are located in the EU, you should not use this Application.</p>
+            
+            <h4>HIPAA & Regulatory Status</h4>
+            <p>BioTrend is a direct-to-consumer personal health-tracking tool. The Company is <strong>NOT</strong> a "Covered Entity" or "Business Associate" as defined under the Health Insurance Portability and Accountability Act (HIPAA). The Service should <strong>NOT</strong> be used by healthcare providers or clinics to maintain or transmit Protected Health Information (PHI).</p>
+            <p><strong>We are not a healthcare provider</strong> and are not subject to HIPAA. <strong>We do not claim HIPAA compliance</strong>.</p>
+
+            <h3>Collecting and Using Your Data</h3>
+            <p>We prioritize the privacy of your medical data. We only share Your Personal Data in the limited situations detailed below.</p>
+            
+            <h4>Types of Data Collected</h4>
+            
+            <strong>1. Health and Medical Data</strong>
+            <p>To provide its core functionality, BioTrend requires health-related information that you voluntarily provide. Because BioTrend prioritizes local on-device storage, the following data is stored entirely on your device (or your personal iCloud) and is not permanently stored on our servers:</p>
+            <ul>
+                <li>Lab test results and biomarker values.</li>
+                <li>Basic demographic data required for accurate medical reference ranges (such as age and biological sex).</li>
+            </ul>
+
+            <p><strong>Temporary Processing:</strong> When you upload a PDF lab report, all document parsing and Optical Character Recognition (OCR) occurs <strong>locally on your device</strong>. The PDF document never leaves your phone. Only the extracted raw text is transmitted to our servers for temporary analysis and is not stored permanently.</p>
+
+            <strong>2. Apple Health (HealthKit) Data</strong>
+            <p>BioTrend integrates with Apple's HealthKit to synchronize your vitals and health records.</p>
+            <ul>
+                <li>We only request access to read and write specific, relevant health data with your explicit, in-app consent.</li>
+                <li>Apple HealthKit Data is <strong>NEVER</strong> used for marketing, advertising, or data mining purposes.</li>
+                <li>We do not sell your HealthKit data to third parties.</li>
+                <li>HealthKit data is used exclusively to populate your BioTrend dashboard and provide you with a consolidated view of your health metrics. You can manage or revoke BioTrend's access to Apple Health at any time via the Apple Health app settings.</li>
+            </ul>
+
+            <strong>3. Usage and Device Data</strong>
+            <p>We may collect diagnostic and usage data automatically (such as device type, iOS version, and crash reports) to maintain the stability and performance of the Application. To deliver core app features like background processing alerts, we securely store anonymous device push notification tokens.</p>
+
+            <h4>How We Use Your Data</h4>
+            <p>The Company uses Your Data strictly for the following purposes:</p>
+            <ul>
+                <li><strong>To provide and maintain our Service:</strong> Including organizing your lab results and visualizing your health trends on your device.</li>
+                <li><strong>To process lab reports (Ephemeral Processing):</strong> When you upload a PDF lab report, the file is scanned and processed locally on your device. <strong>The original PDF file never leaves your phone.</strong> Only the securely extracted raw text is transmitted to our backend services to identify and categorize your biomarkers. <strong>This transmission is strictly temporary.</strong> The raw text is permanently deleted from our active servers immediately after the parsed data is successfully returned to your device.</li>
+    <li><strong>To deliver notifications:</strong> To alert you when a background document scan has been completed.</li>
+                <li><strong>To contact You:</strong> Regarding mandatory security updates, technical notices, or changes to our terms.</li>
+            </ul>
+            <p>We explicitly state that we do <strong>NOT</strong> use your Health Data or Personal Data for targeted advertising or marketing campaigns.</p>
+
+            <h3>Disclosure of Your Data</h3>
+            <p>We prioritize the privacy of your medical data. We only share Your Personal Data in the following limited situations:</p>
+            <ul>
+                <li><strong>With Service Providers:</strong> We use trusted third-party services (such as secure cloud hosting and automated text-extraction APIs) solely to operate the Application. These providers are bound by strict confidentiality agreements and do not use your data to train public AI models.</li>
+                <li><strong>For legal requirements:</strong> We may disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities.</li>
+                <li><strong>Business Transfers:</strong> If the Company is involved in a merger or acquisition, Your data may be transferred, but will remain subject to the same strict confidentiality protections. We will provide notice before Your Personal Data is transferred.</li>
+            </ul>
+
+            <h3>Retention and Deletion of Your Data</h3>
+            <p>The Company will retain Your Personal and Health Data only for as long as your account is active or as needed to provide you the Service.</p>
+            <p><strong>Delete Your Personal Data:</strong> You have the right to delete all Personal and Health Data We have collected about You. You can instantly delete specific lab results, files, or your entire profile directly within the Application's settings. Upon account deletion, all associated Health Data, profile metrics, and synced records are permanently and irrecoverably erased from our active servers.</p>
+
+            <h3>Security of Your Personal Data</h3>
+            <p>The Security of Your Personal Data is our highest priority. We utilize industry-standard encryption and secure cloud infrastructure to protect your health records. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and We cannot guarantee its absolute security.</p>
+
+            <h3>Children's Privacy and Pediatric Data</h3>
+            <p>Our Service does not address anyone under the age of 18, and individuals under 18 are not permitted to create an account. We do not knowingly collect personally identifiable information directly from anyone under the age of 18.</p>
+            <p><strong>Tracking Dependents:</strong> If you are a parent or legal guardian, you may use BioTrend to track the health data of your minor children. By inputting a minor's data into the Service, you represent and warrant that you have the legal authority to consent to the processing of that child's Health Data under this Privacy Policy.</p>
+            <p>If you are a parent or guardian and you are aware that your child has provided us with Personal Data without your consent, please note that BioTrend does not collect identifiable contact information (such as emails or phone numbers) that would allow us to remotely identify and delete a specific user's data from our servers. To remove a minor's data, you must delete their profile directly within the Application's settings or delete the Application entirely from the child's device, which will permanently erase their local and synced records.</p>
+            
+            <h3>Changes to this Privacy Policy</h3>
+            <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy within the Application and updating the "Last updated" date.</p>
+
+            <h3>Contact Us</h3>
+            <p>If you have any questions about this Privacy Policy, You can contact us by email at: <a href="mailto:ivan.korostylov@gmail.com" style="color: var(--accent);">ivan.korostylov@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BioTrend. All Rights Reserved.</p>
+        <p>
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+        </p>
+        <span class="disclaimer">BioTrend is for informational purposes only. For professional medical advice or diagnosis, always consult a healthcare professional.</span>
+    </footer>
+
+</body>
+</html>
