@@ -122,7 +122,39 @@ h2 {
     margin-top: 0;
     background: linear-gradient(135deg, #ffffff, #d1d5db);
     -webkit-background-clip: text;
+    background-clip: text; /* Added for compatibility */
     -webkit-text-fill-color: transparent;
+    color: transparent; /* Added for compatibility */
+}
+
+/* Grid App Titles */
+.title-biotrend { 
+    background: linear-gradient(135deg, #ff9b9c, var(--accent-biotrend)); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+}
+.title-ilists { 
+    background: linear-gradient(135deg, #8ad1ff, var(--accent-ilists)); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+}
+.title-actions { 
+    background: linear-gradient(135deg, #ffd485, var(--accent-actions)); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+}
+.title-iexpire { 
+    background: linear-gradient(135deg, #b8f27e, var(--accent-iexpire)); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
 }
 
 h3 { font-size: 1.3rem; margin-top: 25px; color: var(--accent); }
@@ -130,12 +162,6 @@ h4 { font-size: 1.1rem; margin-top: 20px; color: #f3f4f6; border-left: 3px solid
 p, li { color: var(--text-main); line-height: 1.6; font-size: 1.05rem; }
 ul { padding-left: 20px; }
 li { margin-bottom: 10px; }
-
-/* Grid App Titles */
-.title-biotrend { background: linear-gradient(135deg, #ff9b9c, var(--accent-biotrend)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.title-ilists { background: linear-gradient(135deg, #8ad1ff, var(--accent-ilists)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.title-actions { background: linear-gradient(135deg, #ffd485, var(--accent-actions)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.title-iexpire { background: linear-gradient(135deg, #b8f27e, var(--accent-iexpire)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 /* =========================================
    Buttons & Links
