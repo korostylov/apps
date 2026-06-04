@@ -7,13 +7,13 @@
     --card-border: rgba(255, 255, 255, 0.08);
     --text-main: #f3f4f6;
     --text-muted: #9ca3af;
-    --accent: #E76F70; /* Default fallback accent */
+    --accent: #9ca3af; /* Default fallback accent */
     
     /* App-specific accents for the homepage grid */
     --accent-biotrend: #E76F70;
     --accent-ilists: #4DA8DA;
     --accent-actions: #F9A826;
-    --accent-iexpire: #7ED321;
+    --accent-iexpire: #9370DB;
 }
 
 body {
