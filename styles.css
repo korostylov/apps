@@ -208,8 +208,8 @@ li { margin-bottom: 10px; }
 
 .btn-secondary {
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.7); /* Slightly dimmed text so primary stands out */
-    border: 1px solid transparent; /* Keeps the button the same height as primary */
+    color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary:hover { 
