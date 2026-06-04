@@ -129,33 +129,41 @@ h2 {
 
 /* Grid App Titles */
 .title-biotrend { 
-    background: var(--accent); /* linear-gradient(135deg, #ff9b9c, var(--accent-biotrend)); */
-    -webkit-background-clip: text; 
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent;
+    /* 1. Remove the gradient background */
+    background: none; 
+    
+    /* 2. Reset the clipping properties inherited from the h2 rule */
+    -webkit-background-clip: border-box; 
+    background-clip: border-box;
+    -webkit-text-fill-color: initial; 
+    
+    /* 3. Apply your solid accent color */
+    color: var(--accent-biotrend);
 }
 .title-ilists { 
-    background: var(--accent); /* linear-gradient(135deg, #8ad1ff, var(--accent-ilists)); */
-    -webkit-background-clip: text; 
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent;
+    /* 1. Remove the gradient background */
+    background: none; 
+    
+    /* 2. Reset the clipping properties inherited from the h2 rule */
+    -webkit-background-clip: border-box; 
+    background-clip: border-box;
+    -webkit-text-fill-color: initial; 
+    
+    /* 3. Apply your solid accent color */
+    color: var(--accent-ilists);
 }
 .title-actions { 
-    background: var(--accent); /* linear-gradient(135deg, #ffd485, var(--accent-actions)); */
-    -webkit-background-clip: text; 
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent;
+    /* 1. Remove the gradient background */
+    background: none; 
+    
+    /* 2. Reset the clipping properties inherited from the h2 rule */
+    -webkit-background-clip: border-box; 
+    background-clip: border-box;
+    -webkit-text-fill-color: initial; 
+    
+    /* 3. Apply your solid accent color */
+    color: var(--accent-actions);
 }
-/* .title-iexpire { 
-    background:linear-gradient(135deg, #b8f27e, var(--accent-iexpire));
-    -webkit-background-clip: text; 
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent;
-} */
 .title-iexpire { 
     /* 1. Remove the gradient background */
     background: none; 
