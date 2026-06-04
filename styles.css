@@ -206,6 +206,17 @@ li { margin-bottom: 10px; }
 
 .btn-primary:hover { background-color: rgba(255, 255, 255, 0.15); }
 
+.btn-secondary {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7); /* Slightly dimmed text so primary stands out */
+    border: 1px solid transparent; /* Keeps the button the same height as primary */
+}
+
+.btn-secondary:hover { 
+    background-color: rgba(255, 255, 255, 0.05); 
+    color: #ffffff;
+}
+
 footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
 footer a:hover { color: var(--accent); }
 .disclaimer { font-size: 0.8rem; margin-top: 15px; display: block; line-height: 1.4; }
