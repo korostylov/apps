@@ -11,7 +11,7 @@
     
     /* App-specific accents for the homepage grid */
     --accent-biotrend: #E76F70;
-    --accent-ilists: #4DA8DA;
+    --accent-ilists: #4DA8DA; /* cyan: 00FFFF */
     --accent-actions: #66E6E3; /* light mode:00C7BE */
     --accent-iexpire: #9370DB;
 }
@@ -106,7 +106,7 @@ footer {
 .logo {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--accent); /* Solid accent color */
+    color: var(--accent);
     margin-bottom: 10px;
 }
 
@@ -129,28 +129,28 @@ h2 {
 
 /* Grid App Titles */
 .title-biotrend { 
-    background: linear-gradient(135deg, #ff9b9c, var(--accent-biotrend)); 
+    background: var(--accent); /* linear-gradient(135deg, #ff9b9c, var(--accent-biotrend)); */
     -webkit-background-clip: text; 
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent;
 }
 .title-ilists { 
-    background: linear-gradient(135deg, #8ad1ff, var(--accent-ilists)); 
+    background: var(--accent); /* linear-gradient(135deg, #8ad1ff, var(--accent-ilists)); */
     -webkit-background-clip: text; 
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent;
 }
 .title-actions { 
-    background: linear-gradient(135deg, #ffd485, var(--accent-actions)); 
+    background: var(--accent); /* linear-gradient(135deg, #ffd485, var(--accent-actions)); */
     -webkit-background-clip: text; 
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent;
 }
 .title-iexpire { 
-    background: linear-gradient(135deg, #b8f27e, var(--accent-iexpire)); 
+    background: var(--accent); /* linear-gradient(135deg, #b8f27e, var(--accent-iexpire)); */
     -webkit-background-clip: text; 
     background-clip: text;
     -webkit-text-fill-color: transparent; 
