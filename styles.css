@@ -186,7 +186,18 @@ li { margin-bottom: 10px; }
 /* =========================================
    Buttons & Links
 ========================================= */
-.action-links { margin-top: 25px; display: flex; gap: 15px; }
+/* .action-links { margin-top: 25px; display: flex; gap: 15px; } */
+.action-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows buttons to stack if the card gets too narrow */
+}
+
+.action-links .btn {
+    flex: 1; /* Forces both buttons to take up exactly 50% of the available width */
+    min-width: 140px; /* Prevents them from getting unreadably squished before wrapping */
+}
 
 .btn {
     padding: 10px 20px;
