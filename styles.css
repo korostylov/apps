@@ -12,7 +12,7 @@
     /* App-specific accents for the homepage grid */
     --accent-biotrend: #E76F70;
     --accent-ilists: #4DA8DA;
-    --accent-actions: #F9A826;
+    --accent-actions: #66E6E3; /* light mode:00C7BE */
     --accent-iexpire: #9370DB;
 }
 
